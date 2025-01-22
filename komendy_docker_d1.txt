@@ -28,3 +28,6 @@ Komendy DOCKER - dzień 1
 19. wieloetapowa aplikacji Java:
     -> wejście w katolog -> cd diamol\ch04\exercises\image-of-the-day
     -> utworzenie obrazu -> docker image build -t image-of-the-day
+    -> utowrzenie sieci dockera -> docker network create nat
+    -> uruchomienie konetnera -> docker run --name iotd -d -p 800:80 --network nat image-of-the-day
+    -> adres: localhost:800/image
