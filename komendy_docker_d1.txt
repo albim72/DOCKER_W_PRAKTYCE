@@ -8,3 +8,6 @@ Komendy DOCKER - dzień 1
     -> docker container logs f1122140889f
 4. Uruchamianie strony www: docker container run --detach --publish 8088:80 diamol/ch02-hello-diamol-web
 5. Usuwanie działających kontenerów (wszystkich) -> docker container rm --force $(docker container ls --all --quiet)
+6. docker image pull diamol/ch03-web-ping -> pobramnie obrazu aplikacji z DockerHub
+7. docker container run -d --name web-ping diamol/ch03-web-ping -> uruchomienie kontenera z użyciem pobranego obrazu
+8. docker container logs web-ping -> sprawdzenie logów kontenera - wszystkich operacji wykonanych przez aplikację
