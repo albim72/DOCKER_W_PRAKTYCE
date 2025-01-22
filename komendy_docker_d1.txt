@@ -1,1 +1,4 @@
+Komendy DOCKER - dzień 1
 
+1. docker container run diamol/ch02-hello-diamol -> uruchomienie kontenera
+2. 
