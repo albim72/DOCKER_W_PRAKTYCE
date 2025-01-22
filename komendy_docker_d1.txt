@@ -13,3 +13,7 @@ Komendy DOCKER - dzień 1
 8. docker container logs web-ping -> sprawdzenie logów kontenera - wszystkich operacji wykonanych przez aplikację
 9. docker rm -f web-ping -> usunięcie kontenera
 10. docker container run --env TARGET=google.com diamol/ch03-web-ping -> utworzenie nowego kontenera z nową zmienną środowiskową TARGET
+11. cd diamol/ch03/exercies/web-ping -> wejście do katalogu aplikacji
+12. docker image build --tag web-ping -> budowanie własnego obrazu kontenera dla wybranej aplikacji
+13. docker image ls 'w*' -> sprawdzenie czy obraz istnieje
+14. docker container run web-ping -> uruchomienie kontenera
