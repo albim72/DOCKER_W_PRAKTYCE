@@ -24,3 +24,7 @@ Komendy DOCKER - dzień 1
         -> cd diamol\ch04\exercises\multi-stage -> wejście do katalogu aplikacji
         -> docker build -t multi-stage .  -> budowa obrazu na podstawie Dockerfile
         -> docker container run multi-stage -> uruchomienie
+
+19. wieloetapowa aplikacji Java:
+    -> wejście w katolog -> cd diamol\ch04\exercises\image-of-the-day
+    -> utworzenie obrazu -> docker image build -t image-of-the-day
