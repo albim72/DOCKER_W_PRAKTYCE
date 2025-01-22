@@ -19,3 +19,4 @@ Komendy DOCKER - dzień 1
 14. docker container run web-ping -> uruchomienie kontenera
 15. docker image history web-ping -> historia działań i zmian dokonywanych na obrazie
 16. docker system df -> lista obrazów z sumaryną zajętością pamięci
+17. docker image build -t web-ping:v2 .  -> tworzenie drugiej wersji obrazu z tagiem v2
