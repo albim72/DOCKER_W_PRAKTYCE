@@ -6,3 +6,5 @@ Komendy DOCKER - dzień 1
     -> docker container ls
     -> docker container top f1122140889f
     -> docker container logs f1122140889f
+4. Uruchamianie strony www: docker container run --detach --publish 8088:80 diamol/ch02-hello-diamol-web
+5. Usuwanie działających kontenerów (wszystkich) -> docker container rm --force $(docker container ls --all --quiet)
