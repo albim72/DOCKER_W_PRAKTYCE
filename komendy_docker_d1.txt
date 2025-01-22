@@ -31,3 +31,9 @@ Komendy DOCKER - dzień 1
     -> utowrzenie sieci dockera -> docker network create nat
     -> uruchomienie konetnera -> docker run --name iotd -d -p 800:80 --network nat image-of-the-day
     -> adres: localhost:800/image
+
+20. Wieloetapowa aplikacja node.js:
+    -> wejście do katalogu -> cd diamol\ch04\exercises\access-log
+    -> budowa obrazu kontenera -> docker build -t access-log .
+    -> uruchomienie kontenera -> docker container run --name accesslog -d -p 801:80 --network nat access-log
+    -> adres: localhost:801/stats
