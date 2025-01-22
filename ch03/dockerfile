@@ -1,0 +1,7 @@
+FROM diamol/node
+ENV TARGET="wp.pl"
+ENV METHOD="HEAD"
+ENV INTERVAL="5000"
+WORKDIR /web-ping
+COPY app.js .
+CMD ["node", "/web-ping/app.js"]
