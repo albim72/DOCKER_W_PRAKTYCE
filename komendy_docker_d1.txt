@@ -17,3 +17,4 @@ Komendy DOCKER - dzień 1
 12. docker image build --tag web-ping . -> budowanie własnego obrazu kontenera dla wybranej aplikacji
 13. docker image ls 'w*' -> sprawdzenie czy obraz istnieje
 14. docker container run web-ping -> uruchomienie kontenera
+15. docker image history web-ping -> historia działań i zmian dokonywanych na obrazie
