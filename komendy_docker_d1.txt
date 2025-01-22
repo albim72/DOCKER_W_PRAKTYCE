@@ -1,4 +1,8 @@
 Komendy DOCKER - dzień 1
 
 1. docker container run diamol/ch02-hello-diamol -> uruchomienie kontenera
-2. 
+2. docker container run --interactive --tty diamol/base - uruchomnienie kontenera interaktywnego z dostępem do sesji terminala
+3. inspekcja uruchomionych kontenerów:
+    -> docker container ls
+    -> docker container top f1122140889f
+    -> docker container logs f1122140889f
