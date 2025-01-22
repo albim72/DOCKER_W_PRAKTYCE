@@ -37,3 +37,11 @@ Komendy DOCKER - dzień 1
     -> budowa obrazu kontenera -> docker build -t access-log .
     -> uruchomienie kontenera -> docker container run --name accesslog -d -p 801:80 --network nat access-log
     -> adres: localhost:801/stats
+
+21. Aplikacja numpy - python:
+    -> wprowadź kod żródłowy pythona do pliku main.py
+    -> zainstaluj bibliotekę numpy
+    -> napisz Dockerfile
+    -> wejście do katalogu projektu: cd docker_projects\python_sigmoid
+    -> utworzenie obrazu projektu: docker image build --tag python-sigmoid .
+    -> uruchomienie interaktywne aplikacji: docker container run --interactive --tty python-sigmoid
