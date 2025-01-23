@@ -41,3 +41,9 @@ Komendy DOCKER - dzień 2
     -> wejdż do katalogu: cd diamol\ch07\exercises\image-of-the-day
     -> uruchomienie pliku docker-compose.yml: docker-compose up --detach
     -> adres: http://localhost:8010
+
+    -> przeskalowanie usługi iotd: docker-compose up -d --scale iotd=3
+    -> analiza logów: docker-compose logs --tail=1 iotd
+    -> zatrzymanie docker compose: docker-compose stop
+    -> uruchomienie docker compose: docker-compose start
+    -> lista kontenerów: docker container ls
