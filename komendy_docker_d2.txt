@@ -11,6 +11,7 @@ Komendy DOCKER - dzień 2
     
     -> przypisanie do zminnej id użytkownika: $dockerId = "albim72"
     -> logowanie do dockerhub (podajesz swoje hasło do dockera): docker login --username $dockerId
-    -> utworzenie instancji obrazu: docker image tag image-gallery $dockerId/image_gallery:v1    
+    -> utworzenie instancji obrazu - otagowanie: docker tag image-gallery:latest $dockerId/image-gallery:v3  
     -> analiza referencji obrazu: docker image ls --filter reference=image-gallery --filter reference='*/image-gallery'
+    -> umieszczenie obrazu na dockerhub: docker push $dockerId/image-gallery:v3
 
