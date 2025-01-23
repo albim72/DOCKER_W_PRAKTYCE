@@ -14,4 +14,5 @@ Komendy DOCKER - dzień 2
     -> utworzenie instancji obrazu - otagowanie: docker tag image-gallery:latest $dockerId/image-gallery:v3  
     -> analiza referencji obrazu: docker image ls --filter reference=image-gallery --filter reference='*/image-gallery'
     -> umieszczenie obrazu na dockerhub: docker push $dockerId/image-gallery:v3
+    -> wyświetlenie strony obrazu (otagowanego): echo "https://hub.docker.com/r/$dockerId/image-gallery/tags" - wejdź na stronę - otrzymassz widok obrazu i jego tagów
 
