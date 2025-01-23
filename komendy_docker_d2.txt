@@ -27,3 +27,8 @@ Komendy DOCKER - dzień 2
 4. Utworzenie złotego obrazu
     -> wejście do katalogu: cd diamol\ch05\exercises\dotnet-sdk
     -> utworzenie złotego obrazu: docker image build -t golden/dotnetcore-sdk:3.0 .
+
+5. Tworzenie wolumenu:
+    -> utworzenie wolumenu na podstawie obrazu:  docker container run --name todo1 -d -p 8010:80 diamol/ch06-todo-list
+    -> inspekcja wolumenu: docker container inspect --format '{{.Mounts}}' todo1
+    -> sprawdzenie listy wolumnów: docker volume ls
