@@ -32,3 +32,7 @@ Komendy DOCKER - dzień 2
     -> utworzenie wolumenu na podstawie obrazu:  docker container run --name todo1 -d -p 8010:80 diamol/ch06-todo-list
     -> inspekcja wolumenu: docker container inspect --format '{{.Mounts}}' todo1
     -> sprawdzenie listy wolumnów: docker volume ls
+
+6. utworzenie obiektu docker-compose:
+    -> utworzenie sieci: docker network create nat
+    -> uruchomienie pliku docker-compose.yml: docker-compose up
