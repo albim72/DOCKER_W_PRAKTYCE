@@ -1,1 +1,6 @@
 Komendy DOCKER - dzień 2
+
+1. Aplikacja języka GO:
+    -> wejście do koatalogu: cd diamol\ch04\exercises\image-gallery
+    -> utworzenie obrazu: docker build -t image-gallery .
+
