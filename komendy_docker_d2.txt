@@ -3,4 +3,6 @@ Komendy DOCKER - dzień 2
 1. Aplikacja języka GO:
     -> wejście do koatalogu: cd diamol\ch04\exercises\image-gallery
     -> utworzenie obrazu: docker build -t image-gallery .
+    -> porównanie rozmiarów obrazów: docker image ls -f reference=diamol/golang -f reference=image-gallery
+
 
