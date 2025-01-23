@@ -1,0 +1,22 @@
+version: '3'
+services:
+  modul1:
+    image: python:3.9
+    volumes:
+      - ./modul1:/app
+    working_dir: /app
+    command: ["python", "modul1.py"]
+
+  modul2:
+    image: python:3.9
+    volumes:
+      - ./modul2:/app
+    working_dir: /app
+    command: ["python", "modul2.py"]
+
+  modul3:
+    image: python:3.9
+    volumes:
+      - ./modul3:/app
+    working_dir: /app
+    command: ["python", "modul3.py"]
