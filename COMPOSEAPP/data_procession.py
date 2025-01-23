@@ -1,12 +1,9 @@
 import pandas as pd
-import numpy as np
 
-def create_dataframe():
-    data = {
-        'A': np.random.rand(10),
-        'B': np.random.randint(1, 100, 10)
-    }
+def funkcja1():
+    data = {'Kolumna1': [1, 2, 3, 4, 5], 'Kolumna2': [10, 20, 30, 40, 50]}
     df = pd.DataFrame(data)
-    return df
-
+    print(df)
+    
 if __name__ == "__main__":
+    funkcja1()
