@@ -16,3 +16,5 @@ Komendy DOCKER - dzień 2
     -> umieszczenie obrazu na dockerhub: docker push $dockerId/image-gallery:v3
     -> wyświetlenie strony obrazu (otagowanego): echo "https://hub.docker.com/r/$dockerId/image-gallery/tags" - wejdź na stronę - otrzymassz widok obrazu i jego tagów
 
+3. Rejestry dockera
+    -> uruchomienie rejestru dockera: docker container run -d -p 5000:5000 --restart always diamol/registry
