@@ -44,6 +44,10 @@ Komendy DOCKER - dzień 2
 
     -> przeskalowanie usługi iotd: docker-compose up -d --scale iotd=3
     -> analiza logów: docker-compose logs --tail=1 iotd
-    -> zatrzymanie docker compose: docker-compose stop
-    -> uruchomienie docker compose: docker-compose start
+    -> zastopowanie docker compose: docker-compose stop
+    -> odstopowanie docker compose: docker-compose start
+    -> lista kontenerów: docker container ls
+
+    -> zatrzymanie docker compose: docker-compose down
+    -> uruchomienie docker compose: docker-compose up
     -> lista kontenerów: docker container ls
