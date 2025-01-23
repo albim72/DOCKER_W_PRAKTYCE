@@ -36,3 +36,7 @@ Komendy DOCKER - dzień 2
 6. utworzenie obiektu docker-compose:
     -> utworzenie sieci: docker network create nat
     -> uruchomienie pliku docker-compose.yml: docker-compose up
+
+    3 składniki:
+    -> wejdż do katalogu: cd diamol\ch07\exercises\image-of-the-day
+    -> uruchomienie pliku docker-compose.yml: docker-compose up --detach
