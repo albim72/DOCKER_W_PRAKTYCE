@@ -40,3 +40,4 @@ Komendy DOCKER - dzień 2
     3 składniki:
     -> wejdż do katalogu: cd diamol\ch07\exercises\image-of-the-day
     -> uruchomienie pliku docker-compose.yml: docker-compose up --detach
+    -> adres: http://localhost:8010
