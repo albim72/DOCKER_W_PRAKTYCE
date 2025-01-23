@@ -23,3 +23,7 @@ Komendy DOCKER - dzień 2
     -> utworzenie obrazu w rejestrze lokalnym: docker image tag image-gallery registry.local:5000/gallery/ui:v3
     -> pełna informacja na temat dockera: docker info
     -> umieszczenie obrazu w rejestrze lokalnym: docker image push registry.local:5000/gallery/ui:v3
+
+4. Utworzenie złotego obrazu
+    -> wejście do katalogu: cd diamol\ch05\exercises\dotnet-sdk
+    -> utworzenie złotego obrazu: docker image build -t golden/dotnetcore-sdk:3.0 .
