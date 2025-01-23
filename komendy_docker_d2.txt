@@ -4,5 +4,7 @@ Komendy DOCKER - dzień 2
     -> wejście do koatalogu: cd diamol\ch04\exercises\image-gallery
     -> utworzenie obrazu: docker build -t image-gallery .
     -> porównanie rozmiarów obrazów: docker image ls -f reference=diamol/golang -f reference=image-gallery
+    -> uruchomienie kontenera: docker container run -d -p 802:80 --network nat image-gallery
+    -> adres: localhost:802
 
 
