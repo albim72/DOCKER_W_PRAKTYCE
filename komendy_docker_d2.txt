@@ -7,4 +7,8 @@ Komendy DOCKER - dzień 2
     -> uruchomienie kontenera: docker container run -d -p 802:80 --network nat image-gallery
     -> adres: localhost:802
 
-
+2. Tworzenie obrazu i przkazanie go do dockerhub
+    
+    -> przypisanie do zminnej id użytkownika: $dockerId = "albim72"
+    -> logowanie do dockerhub (podajesz swoje hasło do dockera): docker login --username $dockerId
+    -> utworzenie instancji obrazu: docker image tag image-gallery $dockerId/image_gallery:v1
