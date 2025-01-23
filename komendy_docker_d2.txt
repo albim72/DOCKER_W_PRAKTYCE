@@ -20,4 +20,6 @@ Komendy DOCKER - dzień 2
     -> uruchomienie rejestru dockera: docker container run -d -p 5000:5000 --restart always diamol/registry
     -> wporwadznie nazwy zastępczej do pliku hosts: Add-Content -Value "127.0.0.1 registry.local" -Path /windows/system32/drivers/etc/hosts
     -> sprawdzenie nowej nazwy komputera lokalnego: ping registry.local
-
+    -> utworzenie obrazu w rejestrze lokalnym: docker image tag image-gallery registry.local:5000/gallery/ui:v3
+    -> pełna informacja na temat dockera: docker info
+    -> umieszczenie obrazu w rejestrze lokalnym: docker image push registry.local:5000/gallery/ui:v3
