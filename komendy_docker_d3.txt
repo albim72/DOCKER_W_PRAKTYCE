@@ -24,5 +24,6 @@ DOCKER SWARM
 -> przejście do trybu klastra: docker swarm init
 -> dołączenie nowego węzła roboczego: docker swarm join-token worker
 -> dołączenie nowego węzła managera: docker swarm join-token manager
+-> wyświetlenie węzłów: docker node ls
 
 
