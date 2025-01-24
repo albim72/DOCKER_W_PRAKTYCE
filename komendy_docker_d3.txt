@@ -30,5 +30,7 @@ DOCKER SWARM
 -> sprawdzenie czy usługa została utworzona: docker service ls
 -> lista kontenerów: docker service ps timecheck
 -> usunięcie ostatniego uruchomionego kontenera usługi: docker container rm -f $(docker container ls --last 1 -q)
+-> sprawdzenie repliki usługi: docker service ps timecheck
+
 
 
