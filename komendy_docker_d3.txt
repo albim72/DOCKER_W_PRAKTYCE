@@ -42,5 +42,7 @@
   -> wdrożenie stosu: docker stack deploy -c ./todo-list/v1.yml todo
   -> sprawdzenie stosów: docker stack ls
   -> wyświetlenie usług: docker service ls
+  -> zauktalizowany plik compose  wdrożenie: docker stack deploy -c ./todo-list/v2.yml todo
+  -> sprawdzenie replik usługi: docker service ps todo_todo-web
 
 
