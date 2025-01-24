@@ -11,3 +11,11 @@
   Przeanalizuj pliki yml
   -> docker-compose up -d
   -> adres: http://localhost:8030/
+
+4. Współpraca dockera z githubem
+  -> pliku dockera (Dockerfile) można przechowywać na GitHubie i zdynamicznym udostępnieniem
+  -> automatyczne budowanie obrazów na podstawie danych z GitHuba
+  -> kod pliku: docker-build.yml daj możliwość automatycznego budowania i publikowania obrazów
+  -> wymagania  -> ustawienie skretów na Githubie: np. DOCKER_USERNAME, DOCKER_PASSWORD ...
+                -> zmiana nazwy repozytorium na DockerHub
+  -> obrazy Dockera użuwamy przez usługę  GitHub Actions
