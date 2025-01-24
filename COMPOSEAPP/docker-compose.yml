@@ -11,12 +11,12 @@ services:
       - .:/app
     working_dir: /app
 
-  data_procession_service:
+  data_processing_service:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: data_procession_service_container
-    command: python data_procession.py
+    container_name: data_processing_service_container
+    command: python data_processing.py
     volumes:
       - .:/app
     working_dir: /app
