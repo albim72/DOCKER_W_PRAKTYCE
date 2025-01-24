@@ -26,4 +26,7 @@ DOCKER SWARM
 -> dołączenie nowego węzła managera: docker swarm join-token manager
 -> wyświetlenie węzłów: docker node ls
 
+-> twworzenie usługi uruchamiającej jeden kontener: docker service create --name timecheck --replicas 1 diamol/ch12-timecheck:1.0
+-> sprawdzenie czy usługa została utworzona: docker service ls
+
 
