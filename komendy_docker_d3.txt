@@ -49,6 +49,27 @@
   -> usunięcie stosu: docker stack rm todo
 
 KUBERNETES:
-7. narzędzie wiersza poleceń kubernetes: kubectl get nodes
+23. narzędzie wiersza poleceń kubernetes: kubectl get nodes
+Komenda 24 -> narzędzie wiersza poleceń klastra Kubernetes:  kubectl get nodes
+Komenda 25 -> uruchomienie kapsuły Kubernetes :  kubectl run hello-kiamol --image=kiamol/ch02-hello-kiamol --restart=Never
+Komenda 26 -> oczekiwanie aż kapsuła będzie gotowa: kubectl wait --for=condition=Ready pod hello-kiamol
+Komenda 27 -> wyświetlenie wszystkich kapsuł w klastrze: kubectl get pods
+Komenda 28 -> wyświetlenie szczegółowych informacji o kapsule:  kubectl describe pod hello-kiamol
+Komenda 29 -> określenie niestandardowycch kolumn w danych wyjściowych:  kubectl get pod hello-kiamol --output custom-columns=NAME:metadata.name,NODE_IP:status.hostIP,POD_IP:status.podI
+Komenda 30 -> wyszukiwanie kontemeara danej kapsuły: docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol
+Komenda 31 -> usunięcie kontenera:  docker container rm -f $(docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol)
+Komenda 32 -> przywracanie kontenera do kapsuły: docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol
+Komenda 33 -> uruchomienie aplikacji www:
+     kubectl run hkiamol --image=kiamol/ch02-hello-kiamol --restart=Never
+      kubectl get pod hkiamol
+      kubectl port-forward pod/hkiamol 8080:80
+      uruchom stronę: localhost:8080
+
+Komenda 34 -> utowrzenie nowego wdrożenia: kubectl create deployment hello-kiamol-2 --image=kiamol/ch02-hello-kiamol
+Konenda 35 -> wypisanie etykiet (json):  kubectl get deploy hello-kiamol-2 -o jsonpath='{.spec.template.metadata.labels}'
+Komenda 36 -> wyświetlenie listy kapsuł, które mają pasującą etykietę:  kubectl get pods -l app=hello-kiamol-2
+Komenda 37 -> dodanie nowej kapsuły opartej na zdefinjowanej etykiecie z nową etykietą:
+    kubectl label pod hello-kiamol-2-787f8db75d-z8k4m app=hello-kiamol-x --overwrite
+    kubectl label pods -l app=hello-kiamol-2 --overwrite app=hello-kiamol-y
 
 
