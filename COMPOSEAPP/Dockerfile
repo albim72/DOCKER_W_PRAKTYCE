@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Skopiowanie lokalnych plików do kontenera
-COPY . /app
+COPY main.py data_processing.py data_struct.py /app/
 
 # Instalacja wymaganych bibliotek
 RUN pip install pandas numpy
