@@ -20,7 +20,7 @@
                 -> zmiana nazwy repozytorium na DockerHub
   -> obrazy Dockera użuwamy przez usługę  GitHub Actions
 
-DOCKER SWARM
+5. DOCKER SWARM
 -> przejście do trybu klastra: docker swarm init
 -> dołączenie nowego węzła roboczego: docker swarm join-token worker
 -> dołączenie nowego węzła managera: docker swarm join-token manager
@@ -36,5 +36,11 @@ DOCKER SWARM
 -> aktualizacja usługi: docker service update --image diamol/ch12-timecheck:2.0 timecheck
 -> wyświetlenie replik usługi: docker service ps timecheck
 -> sprawdzenie dzienników z ostatnich 20 s: docker service ps timecheck
+
+6. Uzycie docker-compose w SWARM:
+  -> wejście do katalogu: cd diamol\ch13\exercises
+  -> wdrożenie stosu: docker stack deploy -c ./todo-list/v1.yml todo
+  -> sprawdzenie stosów: docker stack ls
+  -> wyświetlenie usług: docker service ls
 
 
