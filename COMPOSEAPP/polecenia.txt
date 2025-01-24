@@ -11,3 +11,6 @@ Aby uruchomić pojedynczy serwis, np. tylko data_procession_service:
 Aby zatrzymać działające serwisy:
 
 ->   docker-compose down
+
+
+COPY main.py data_procession.py data_struct.py /app/
