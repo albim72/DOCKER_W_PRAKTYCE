@@ -22,3 +22,5 @@
 
 DOCKER SWARM
 -> przejście do trybu klastra: docker swarm init
+-> dołączenie nowego węzła roboczego: docker swarm join-token worker
+
