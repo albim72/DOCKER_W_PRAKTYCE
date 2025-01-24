@@ -28,5 +28,7 @@ DOCKER SWARM
 
 -> twworzenie usługi uruchamiającej jeden kontener: docker service create --name timecheck --replicas 1 diamol/ch12-timecheck:1.0
 -> sprawdzenie czy usługa została utworzona: docker service ls
+-> lista kontenerów: docker service ps timecheck
+-> usunięcie ostatniego uruchomionego kontenera usługi: docker container rm -f $(docker container ls --last 1 -q)
 
 
