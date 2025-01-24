@@ -19,3 +19,6 @@
   -> wymagania  -> ustawienie skretów na Githubie: np. DOCKER_USERNAME, DOCKER_PASSWORD ...
                 -> zmiana nazwy repozytorium na DockerHub
   -> obrazy Dockera użuwamy przez usługę  GitHub Actions
+
+DOCKER SWARM
+-> przejście do trybu klastra: docker swarm init
