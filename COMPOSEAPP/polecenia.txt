@@ -1,0 +1,13 @@
+Aby uruchomić wszystkie serwisy jednocześnie:
+
+ ->  docker-compose up
+
+Spowoduje to uruchomienie wszystkich trzech plików w oddzielnych kontenerach.
+
+Aby uruchomić pojedynczy serwis, np. tylko data_procession_service:
+
+ ->  docker-compose up data_procession_service
+
+Aby zatrzymać działające serwisy:
+
+->   docker-compose down
