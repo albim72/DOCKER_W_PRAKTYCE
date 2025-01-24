@@ -6,3 +6,8 @@
 2. Konteneryzacja Total Commandera
   -> sprawdzenie wersji Windowsa: [System.Environment]::OSVersion.Version
   
+3. konfigurowanie aplikacji Docker-Compose:
+  -> cd diamol\ch07\exercises\todo-list-postgres
+  Przeanalizuj pliki yml
+  -> docker-compose up -d
+  -> adres: http://localhost:8030/
